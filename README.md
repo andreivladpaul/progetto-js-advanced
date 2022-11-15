@@ -1,10 +1,8 @@
 # progetto-js-advanced
 
-Descrizione
-Questa applicazione grazie ai dati forniti da sito # progetto-js-advanced
 
 Descrizione
-Questa applicazione grazie ai dati forniti da sito global-warming.org tramite API, mostra i dati relativi a numerosi aspetti delle principali citta' del mondo.
+Questa applicazione grazie ai dati forniti da sito api.teleport.org, mostra i dati relativi a numerosi aspetti delle principali citta' del mondo.
 
 Come eseguire l'applicazione
 Nel terminale eseguire:
