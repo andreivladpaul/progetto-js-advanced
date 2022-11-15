@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>City Information</title>
+</head>
+<body>
+    <svg height="100%" width="100%">
+        <defs>
+          <pattern id="doodad" width="66" height="66" viewBox="0 0 40 40" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <rect width="100%" height="100%" fill="rgba(99, 179, 237,1)"/>
+            <path d="M40 20L34 14L34 6L26 6L20 0L14 6L6 6L6 14L0 20L6 26L6 34L14 34L20 40L26 34L34 34L34 26z" fill="#2b6cb0"/>
+            <path d="M39 20L34 14L34 6L26 6L20 8L14 6L6 6L6 14L1 20L6 26L6 34L14 34L20 32L26 34L34 34L34 26z" fill="#2a4365"/>
+            <path d="M15 15L6 14v-8h8zM25 15L26 6h8v8zM15 25L6 26v8h8zM25 25L34 26v8h-8z" fill="#2b6cb0"/>
+          </pattern>
+        </defs>
+        <rect fill="url(#doodad)" height="200%" width="200%"/>
+      </svg>
+
+    <div class="main d-flex justify-content-center flex-column align-items-center" >
+        <div class="search__container d-flex justify-content-evenly     flex-column align-items-center">
+            <h1>City Information</h1>
+            <div class="search">
+                <input id="search" type="text" placeholder="Write a city name..." class="p-2 m-2 rounded border border-secondary">
+                <button onclick=fetch() class="p-2 rounded border border-success" >
+                    Search
+                </button>
+            </div>
+
+        </div>
+        <div  class="results container-fluid d-flex justify-content-center  flex-column">
+            <div class="row d-flex justify-content-center" id="summary">
+            </div>
+            <div class="row d-flex justify-content-center" id="results">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://npmcdn.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
