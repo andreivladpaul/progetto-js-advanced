@@ -6,6 +6,7 @@ Descrizione
 Questa applicazione grazie ai dati forniti da sito api.teleport.org, mostra i dati relativi a numerosi aspetti delle principali citta' del mondo.
 
 Come eseguire l'applicazione
+
 Nel terminale eseguire:
 
 - npm install
